@@ -229,3 +229,11 @@ nav .navlinks{margin-left:auto;margin-right:10px}
   .journal-feature{grid-template-columns:1fr;gap:28px}
   .journal-feature img{max-width:480px}
 }
+
+/* service-area line: one line on computers, two clean lines on phones */
+.area-line{white-space:nowrap}
+@media (max-width:640px){
+  .area-bar{display:none}
+  .area-line{display:block}
+  .area-line + .area-bar + .area-line{margin-top:4px}
+}

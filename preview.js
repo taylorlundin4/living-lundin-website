@@ -21,6 +21,9 @@
 
   var saved = null;
   try { saved = JSON.parse(store.getItem(KEY) || 'null'); } catch (e) {}
+  // Only return to a remembered spot shortly after a publish; otherwise a
+  // freshly opened link starts at the top of the home page.
+  if (saved && (!saved.t || Date.now() - saved.t > 20 * 60 * 1000)) saved = null;
 
   // A page opened by clicking a link starts at the top, like it would on the
   // live site. The preview frame otherwise keeps the previous page's scroll.
@@ -46,7 +49,7 @@
   }
 
   function save() {
-    try { store.setItem(KEY, JSON.stringify({ page: page, y: window.scrollY })); } catch (e) {}
+    try { store.setItem(KEY, JSON.stringify({ page: page, y: window.scrollY, t: Date.now() })); } catch (e) {}
   }
   save();
 
