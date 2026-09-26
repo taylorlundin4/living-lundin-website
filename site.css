@@ -122,9 +122,9 @@ details ul{padding-left:18px}
 .post:hover h3{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
 
 /* cta band */
-.cta{background:var(--taupe);color:var(--on-taupe);text-align:center;display:grid;justify-items:center;gap:22px;padding:72px 24px;border:0}
-.cta h2{color:var(--on-taupe)}
-.cta .eyebrow{color:var(--on-taupe)}
+.cta{background:#4B3323;color:#FFFFFF;text-align:center;display:grid;justify-items:center;gap:22px;padding:72px 24px;border:0}
+.cta h2{color:#FFFFFF}
+.cta .eyebrow{color:#FFFFFF;opacity:.85}
 .cta p{max-width:52ch}
 
 footer{padding-block:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;font-size:.88rem;color:var(--muted)}
