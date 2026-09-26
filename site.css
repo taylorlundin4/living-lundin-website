@@ -194,3 +194,38 @@ nav .navlinks{margin-left:auto;margin-right:10px}
 
 
 .head.centered{margin-inline:auto;text-align:center;justify-items:center}
+
+/* journal */
+.post .date{font-size:.8rem;color:var(--muted)}
+.post .excerpt{color:var(--muted);font-size:.95rem;margin-top:2px}
+.journal-feature{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.journal-feature img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.journal-feature-body{display:grid;gap:14px;justify-items:start;max-width:52ch}
+.journal-feature-body h2 a{text-decoration:none}
+.journal-feature-body h2 a:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.journal-feature-body .date{font-size:.85rem;color:var(--muted)}
+.journal-feature-body .excerpt{color:var(--muted)}
+.journal-list .posts{row-gap:44px}
+
+/* single post */
+.article{padding-bottom:40px}
+.article-head{max-width:760px;margin-inline:auto;text-align:center;display:grid;justify-items:center;gap:14px;padding-block:clamp(48px,7vw,80px) 36px}
+.article-head h1{font-size:clamp(1.9rem,4.4vw,2.4rem)}
+.article-meta{font-size:.85rem;color:var(--muted)}
+.article-cover{display:block;width:100%;max-width:560px;height:auto;aspect-ratio:4/5;object-fit:cover;margin-inline:auto}
+.article-body{max-width:66ch;margin:48px auto 0;display:grid;gap:18px;font-size:1.06rem;line-height:1.75;color:var(--ink)}
+.article-body h2{font-size:1.65rem;margin-top:22px}
+.article-body ol,.article-body ul{margin:0;padding-left:1.4em;display:grid;gap:12px}
+.article-body li::marker{color:var(--brown-2)}
+.article-body strong{color:var(--brown);font-weight:600}
+.article-body a{color:var(--brown);text-underline-offset:4px}
+.article-body figure{margin:12px 0}
+.article-body figure img{display:block;width:100%;height:auto}
+.article-body .book-list{list-style:none;padding:0;gap:8px}
+.article-body .book-list a{font-family:var(--serif);font-size:1.35rem}
+.article-back{max-width:66ch;margin:40px auto 0}
+
+@media (max-width:900px){
+  .journal-feature{grid-template-columns:1fr;gap:28px}
+  .journal-feature img{max-width:480px}
+}

@@ -8,7 +8,14 @@
   var store;
   try { store = window.sessionStorage; store.getItem(KEY); } catch (e) { return; }
 
-  var page = location.pathname.split('/').pop() || 'index.html';
+  // Pages are tracked relative to the site root (the folder preview.js lives in),
+  // so posts in journal/ are remembered as "journal/post-name.html".
+  var script = document.currentScript;
+  var root = script ? new URL('.', script.src).href : new URL('.', location.href).href;
+  var here = location.href.split('#')[0].split('?')[0];
+  var page = here.indexOf(root) === 0 ? here.slice(root.length) : here.split('/').pop();
+  if (!page) page = 'index.html';
+
   var cameFromLink = store.getItem(KEY + '-nav');
   store.removeItem(KEY + '-nav');
 
@@ -17,7 +24,7 @@
 
   if (!cameFromLink && saved) {
     if (saved.page !== page && page === 'index.html') {
-      location.replace(saved.page);
+      location.replace(root + saved.page);
       return;
     }
     if (saved.page === page && saved.y) {
