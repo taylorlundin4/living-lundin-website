@@ -167,3 +167,4 @@ nav .navlinks{margin-left:auto;margin-right:10px}
   nav .navlinks{order:3;width:100%;margin:0;gap:22px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;font-size:.72rem;padding-block:10px 4px;border-top:1px solid var(--line)}
 }
 @media (max-width:520px){ .steps{grid-template-columns:1fr} }
+footer .areas{display:block;margin-top:4px;font-size:.8rem}
