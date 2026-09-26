@@ -176,7 +176,7 @@ nav .navlinks{margin-left:auto;margin-right:10px}
 .fq-side{display:grid;gap:4px}
 .fq-mark{display:block;font-family:var(--serif);font-size:9rem;line-height:.8;color:var(--taupe);height:.55em}
 .feature-quote blockquote{gap:20px}
-.feature-quote blockquote p{font-size:clamp(1.4rem,2.5vw,1.9rem);line-height:1.4;max-width:48ch}
+.feature-quote blockquote p{font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.45;max-width:54ch}
 .faq-teaser{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
 @media (max-width:900px){
   .offer,.why,.feature-quote{grid-template-columns:1fr}
