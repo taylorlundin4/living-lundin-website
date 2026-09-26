@@ -126,7 +126,6 @@ details ul{padding-left:18px}
 .cta h2{color:#FFFFFF}
 .cta .eyebrow{color:#FFFFFF;opacity:.85}
 .cta p{max-width:52ch;color:rgba(255,255,255,.8)}
-.cta p b{font-weight:500;color:#FFFFFF}
 
 footer{padding-block:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;font-size:.88rem;color:var(--muted)}
 footer .brand{display:block;margin-bottom:6px}
