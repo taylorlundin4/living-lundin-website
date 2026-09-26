@@ -1,4 +1,5 @@
 html,body{margin:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 img{max-width:100%}
 [hidden]{display:none!important}
 :root{
@@ -43,6 +44,7 @@ nav{display:flex;justify-content:space-between;align-items:center;gap:16px;paddi
 .ribbon .track{display:flex;width:max-content;animation:ticker 85s linear infinite}
 .ribbon .set{display:flex;align-items:center;gap:18px;white-space:nowrap;padding-right:18px}
 .ribbon .sep{opacity:.5}
+.ribbon span{font:inherit;letter-spacing:inherit;text-transform:inherit}
 .ribbon:hover .track{animation-play-state:paused}
 @keyframes ticker{to{transform:translateX(-50%)}}
 @media (max-width:640px){ .ribbon{font-size:.66rem;letter-spacing:.12em} }
