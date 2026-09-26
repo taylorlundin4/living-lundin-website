@@ -150,16 +150,9 @@ nav .navlinks{margin-left:auto;margin-right:10px}
 
 
 /* photography */
-.svc .photo{display:block;width:calc(100% + 56px);max-width:none;height:auto;aspect-ratio:4/3;object-fit:cover;margin:-32px -28px 6px}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:80px}
 .gallery img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-.stories{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-.stories .photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-.stories .head{margin-bottom:32px}
-.stories .quotes{grid-template-columns:1fr;gap:28px}
 @media (max-width:900px){
-  .stories{grid-template-columns:1fr;gap:36px}
-  .stories .photo{max-width:420px}
   .gallery{gap:8px;padding-bottom:56px}
 }
 @media (max-width:900px){
