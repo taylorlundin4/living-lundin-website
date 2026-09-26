@@ -92,6 +92,7 @@ section{padding-block:80px;border-top:1px solid var(--line)}
 
 /* about */
 .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+img.portrait{display:block;width:100%;height:auto;object-fit:cover;padding:0}
 .portrait{aspect-ratio:4/5;max-width:100%;background:var(--sand);display:grid;place-items:center;color:var(--muted);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:16px}
 .about .prose{display:grid;gap:18px;color:var(--muted);max-width:60ch}
 
@@ -115,8 +116,7 @@ details ul{padding-left:18px}
 /* journal */
 .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .post{display:grid;gap:10px;text-decoration:none}
-.post .thumb{aspect-ratio:4/5;max-width:100%;background:var(--sand)}
-.post:nth-child(2) .thumb{background:var(--taupe);opacity:.7}
+.post .thumb{display:block;width:100%;height:auto;aspect-ratio:4/5;max-width:100%;object-fit:cover;background:var(--sand)}
 .post .cat{font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .post h3{font-size:1.6rem}
 .post:hover h3{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
@@ -148,6 +148,20 @@ nav .navlinks{margin-left:auto;margin-right:10px}
 .faq-page{border-top:0;padding-top:72px}
 .more-link{margin-top:34px}
 
+
+/* photography */
+.svc .photo{display:block;width:calc(100% + 56px);max-width:none;height:auto;aspect-ratio:4/3;object-fit:cover;margin:-32px -28px 6px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:80px}
+.gallery img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.stories{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.stories .photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.stories .head{margin-bottom:32px}
+.stories .quotes{grid-template-columns:1fr;gap:28px}
+@media (max-width:900px){
+  .stories{grid-template-columns:1fr;gap:36px}
+  .stories .photo{max-width:420px}
+  .gallery{gap:8px;padding-bottom:56px}
+}
 @media (max-width:900px){
   .hero,.about,.equip,.faq{grid-template-columns:1fr}
   .hero{min-height:0}
