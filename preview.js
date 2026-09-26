@@ -22,6 +22,19 @@
   var saved = null;
   try { saved = JSON.parse(store.getItem(KEY) || 'null'); } catch (e) {}
 
+  // A page opened by clicking a link starts at the top, like it would on the
+  // live site. The preview frame otherwise keeps the previous page's scroll.
+  if (cameFromLink) {
+    try { history.scrollRestoration = 'manual'; } catch (e) {}
+    var toTop = function () { window.scrollTo(0, 0); };
+    toTop();
+    window.addEventListener('load', function () {
+      toTop();
+      setTimeout(toTop, 150);
+      setTimeout(toTop, 600);
+    });
+  }
+
   if (!cameFromLink && saved) {
     if (saved.page !== page && page === 'index.html') {
       location.replace(root + saved.page);
