@@ -181,7 +181,7 @@ nav .navlinks{margin-left:auto;margin-right:10px}
   .offer,.why,.feature-quote{grid-template-columns:1fr}
   .feature-quote{gap:16px}
   .fq-mark{font-size:4rem}
-  .offer img,.offer.flip img{order:0;height:auto;min-height:0;aspect-ratio:4/3}
+  .offer img,.offer.flip img{order:0;height:auto;min-height:0;aspect-ratio:4/5}
 }
 
 
