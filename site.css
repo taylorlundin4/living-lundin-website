@@ -239,3 +239,16 @@ nav .navlinks{margin-left:auto;margin-right:10px}
   .area-line{display:block}
   .area-line + .area-bar + .area-line{margin-top:4px}
 }
+
+/* about: full success stories */
+.stories-full .head{margin-bottom:24px}
+.story{display:grid;grid-template-columns:200px 1fr;gap:40px;padding-block:36px;border-top:1px solid var(--line)}
+.story-name{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:grid;gap:6px;align-content:start}
+.story-mark{font-family:var(--serif);font-size:4rem;line-height:.7;color:var(--taupe);height:.5em;letter-spacing:0}
+.story blockquote{display:grid;gap:16px;max-width:62ch}
+.story blockquote p{font-size:clamp(1.15rem,1.8vw,1.35rem);line-height:1.5}
+@media (max-width:700px){
+  .story{grid-template-columns:1fr;gap:12px;padding-block:28px}
+  .story-name{grid-auto-flow:column;justify-content:start;align-items:end;gap:10px}
+  .story-mark{font-size:3rem}
+}
