@@ -259,3 +259,15 @@ nav .navlinks{margin-left:auto;margin-right:10px}
 @media (min-width:901px){
   .about-long .portrait{position:sticky;top:24px}
 }
+
+/* about: teaching photo beside the success stories */
+.stories-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:56px;align-items:start}
+.stories-photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.stories-layout .story{grid-template-columns:1fr;gap:10px}
+.stories-layout .story-name{grid-auto-flow:column;justify-content:start;align-items:end;gap:10px}
+.stories-layout .story-mark{font-size:3rem}
+@media (min-width:901px){ .stories-photo{position:sticky;top:24px} }
+@media (max-width:900px){
+  .stories-layout{grid-template-columns:1fr;gap:32px}
+  .stories-photo{max-width:420px}
+}
