@@ -252,3 +252,10 @@ nav .navlinks{margin-left:auto;margin-right:10px}
   .story-name{grid-auto-flow:column;justify-content:start;align-items:end;gap:10px}
   .story-mark{font-size:3rem}
 }
+
+/* about page: longer bio beside a photo that stays in view */
+.about-long{align-items:start}
+.about-long .prose{max-width:64ch}
+@media (min-width:901px){
+  .about-long .portrait{position:sticky;top:24px}
+}
