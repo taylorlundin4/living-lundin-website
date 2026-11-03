@@ -279,3 +279,8 @@ body{
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .29  0 0 0 0 .2  0 0 0 0 .14  0 0 0 .07 0'/></filter><rect width='100%25' height='100%25' filter='url(%23g)'/></svg>"),
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.6 .012' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .29  0 0 0 0 .2  0 0 0 0 .14  0 0 0 .09 -.02'/></filter><rect width='100%25' height='100%25' filter='url(%23f)'/></svg>");
 }
+
+/* very faint grain on the brown blocks, so they read like matte card stock */
+.hero-copy,.pagehead,.cta{
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 .95  0 0 0 0 .9  0 0 0 .055 0'/></filter><rect width='100%25' height='100%25' filter='url(%23b)'/></svg>");
+}
