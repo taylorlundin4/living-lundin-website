@@ -1,8 +1,12 @@
 /* Preview helper: keeps the Claude artifact preview on the same page and
-   scroll position when a new version is published. It does nothing on
-   livinglundin.com and can be deleted before the site goes live. */
+   scroll position when a new version is published. It only runs inside the
+   Claude preview (an embedded frame); on GitHub Pages, livinglundin.com or
+   a locally opened file it does nothing. */
 (function () {
-  if (/(^|\.)livinglundin\.com$/.test(location.hostname)) return;
+  var embedded = false;
+  try { embedded = window.self !== window.top; } catch (e) { embedded = true; }
+  if (!embedded) return;
+  if (/(^|\.)(livinglundin\.com|github\.io)$/.test(location.hostname)) return;
 
   var KEY = 'll-preview';
   var store;
