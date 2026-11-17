@@ -271,3 +271,15 @@ nav .navlinks{margin-left:auto;margin-right:10px}
   .stories-layout{grid-template-columns:1fr;gap:32px}
   .stories-photo{max-width:420px}
 }
+
+/* contact and privacy pages */
+.page-text{border-top:0;padding-top:72px}
+.page-text > div{max-width:680px;margin-inline:auto;display:grid;gap:16px;color:var(--muted)}
+.page-text h2{font-size:clamp(1.5rem,3vw,1.9rem);margin-top:24px}
+.page-text ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.page-text a:not(.btn){color:var(--brown);text-underline-offset:3px}
+.page-text .contact-email{font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.2}
+.page-text .updated{font-size:.85rem;letter-spacing:.06em}
+.page-text .btn{justify-self:start;margin-top:12px}
+.footer-links{display:block;margin-top:6px}
+.footer-links a{color:var(--brown);text-underline-offset:3px}
